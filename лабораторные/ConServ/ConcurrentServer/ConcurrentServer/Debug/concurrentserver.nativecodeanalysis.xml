@@ -1,0 +1,2539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>190</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>6340</DEFECTCODE>
+    <DESCRIPTION>Несоответствие при подписи: "unsigned int" передан в качестве параметра _Param_(2), хотя при вызове "printf" требуется некоторый тип "signed".</DESCRIPTION>
+    <FUNCTION>CommandsCycle</FUNCTION>
+    <DECORATED>?CommandsCycle@@YAXAAW4TalkersCommand@@@Z</DECORATED>
+    <FUNCLINE>157</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>204</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>6340</DEFECTCODE>
+    <DESCRIPTION>Несоответствие при подписи: "unsigned int" передан в качестве параметра _Param_(2), хотя при вызове "printf" требуется некоторый тип "signed".</DESCRIPTION>
+    <FUNCTION>CommandsCycle</FUNCTION>
+    <DECORATED>?CommandsCycle@@YAXAAW4TalkersCommand@@@Z</DECORATED>
+    <FUNCLINE>157</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>281</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6340</DEFECTCODE>
+    <DESCRIPTION>Несоответствие при подписи: "unsigned int" передан в качестве параметра _Param_(6), хотя при вызове "sprintf" требуется некоторый тип "signed".</DESCRIPTION>
+    <FUNCTION>ConsolePipe</FUNCTION>
+    <DECORATED>?ConsolePipe@@YGKPAX@Z</DECORATED>
+    <FUNCLINE>251</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>341</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>6258</DEFECTCODE>
+    <DESCRIPTION>Использование TerminateThread не позволит выполнить правильную очистку потока.</DESCRIPTION>
+    <FUNCTION>ASWTimer</FUNCTION>
+    <DECORATED>?ASWTimer@@YGXPAXKK@Z</DECORATED>
+    <FUNCLINE>337</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>339</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6273</DEFECTCODE>
+    <DESCRIPTION>В качестве параметра _Param_(2) передано нецелочисленное значение, хотя при вызове "printf" требуется целочисленное значение; фактический тип: "void *"; если передается значение указателя, следует использовать %p.</DESCRIPTION>
+    <FUNCTION>ASWTimer</FUNCTION>
+    <DECORATED>?ASWTimer@@YGXPAXKK@Z</DECORATED>
+    <FUNCLINE>337</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>419</LINE>
+      <COLUMN>59</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Чтение недопустимых данных из "msg":  доступный для чтения объем равен "27" байт, однако считать можно только "28" байт.</DESCRIPTION>
+    <FUNCTION>PutAnswerToClient</FUNCTION>
+    <DECORATED>?PutAnswerToClient@@YA_NPADPAUsockaddr@@PAH@Z</DECORATED>
+    <FUNCLINE>416</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>418</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"msg" является массивом из 27 элементов (27 байт)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>419</LINE>
+        <COLUMN>59</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция чтения из "msg[27]" (доступный для чтения диапазон: от 0 до 26)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>479</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6340</DEFECTCODE>
+    <DESCRIPTION>Несоответствие при подписи: "unsigned short" передан в качестве параметра _Param_(3), хотя при вызове "printf" требуется некоторый тип "signed".</DESCRIPTION>
+    <FUNCTION>ResponseServer</FUNCTION>
+    <DECORATED>?ResponseServer@@YGKPAX@Z</DECORATED>
+    <FUNCLINE>449</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>543</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hConsolePipe" может быть равен "0":  это не соответствует спецификации функции "CloseHandle". Самое раннее расположение, где это могло произойти, см. в строке 542</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hConsolePipe" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>538</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>539</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>540</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>541</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>542</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hConsolePipe" является входными данными для "WaitForSingleObject" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\synchapi.h:473)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>543</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hConsolePipe" является входными данными для "CloseHandle" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\handleapi.h:50)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>543</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hConsolePipe" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "CloseHandle"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>541</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hGarbageCleaner" может быть равен "0":  это не соответствует спецификации функции "CloseHandle". Самое раннее расположение, где это могло произойти, см. в строке 530</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" является входными данными для "SetThreadPriority" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\processthreadsapi.h:288)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>538</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>539</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>540</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" является входными данными для "WaitForSingleObject" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\synchapi.h:473)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>541</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" является входными данными для "CloseHandle" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\handleapi.h:50)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>541</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "CloseHandle"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>544</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hResponseServer" может быть равен "0":  это не соответствует спецификации функции "WaitForSingleObject". </DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hResponseServer" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>538</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>539</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>540</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>541</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>542</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>543</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>544</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hResponseServer" является входными данными для "WaitForSingleObject" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\synchapi.h:473)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>544</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hResponseServer" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "WaitForSingleObject"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>542</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hConsolePipe" может быть равен "0":  это не соответствует спецификации функции "WaitForSingleObject". </DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hConsolePipe" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>538</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>539</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>540</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>541</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>542</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hConsolePipe" является входными данными для "WaitForSingleObject" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\synchapi.h:473)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>542</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hConsolePipe" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "WaitForSingleObject"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>545</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hResponseServer" может быть равен "0":  это не соответствует спецификации функции "CloseHandle". Самое раннее расположение, где это могло произойти, см. в строке 544</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hResponseServer" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>538</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>539</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>540</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>541</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>542</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>543</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>544</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hResponseServer" является входными данными для "WaitForSingleObject" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\synchapi.h:473)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>545</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hResponseServer" является входными данными для "CloseHandle" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\handleapi.h:50)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>545</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hResponseServer" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "CloseHandle"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>546</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"st" может быть равен "0":  это не соответствует спецификации функции "FreeLibrary". Самое раннее расположение, где это могло произойти, см. в строке 534</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"st" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"st" является входными данными для "GetProcAddress" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\libloaderapi.h:360)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>538</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>539</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>540</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>541</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>542</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>543</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>544</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>545</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>546</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"st" является входными данными для "FreeLibrary" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\libloaderapi.h:213)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>546</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"st" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "FreeLibrary"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>534</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"st" может быть равен "0":  это не соответствует спецификации функции "GetProcAddress". </DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"st" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"st" является входными данными для "GetProcAddress" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\libloaderapi.h:360)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"st" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "GetProcAddress"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>536</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hAcceptServer" может быть равен "0":  это не соответствует спецификации функции "WaitForSingleObject". </DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hAcceptServer" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hAcceptServer" является входными данными для "WaitForSingleObject" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\synchapi.h:473)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hAcceptServer" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "WaitForSingleObject"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>530</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hGarbageCleaner" может быть равен "0":  это не соответствует спецификации функции "SetThreadPriority". </DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" является входными данными для "SetThreadPriority" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\processthreadsapi.h:288)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "SetThreadPriority"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>540</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hGarbageCleaner" может быть равен "0":  это не соответствует спецификации функции "WaitForSingleObject". Самое раннее расположение, где это могло произойти, см. в строке 530</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" является входными данными для "SetThreadPriority" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\processthreadsapi.h:288)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>538</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>539</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>540</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" является входными данными для "WaitForSingleObject" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\synchapi.h:473)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>540</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hGarbageCleaner" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "WaitForSingleObject"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>538</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hDispatchServer" может быть равен "0":  это не соответствует спецификации функции "WaitForSingleObject". </DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hDispatchServer" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>538</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hDispatchServer" является входными данными для "WaitForSingleObject" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\synchapi.h:473)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>538</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hDispatchServer" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "WaitForSingleObject"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>539</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hDispatchServer" может быть равен "0":  это не соответствует спецификации функции "CloseHandle". Самое раннее расположение, где это могло произойти, см. в строке 538</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hDispatchServer" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>538</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hDispatchServer" является входными данными для "WaitForSingleObject" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\synchapi.h:473)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>539</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hDispatchServer" является входными данными для "CloseHandle" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\handleapi.h:50)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>539</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hDispatchServer" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "CloseHandle"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+      <FILENAME>concurrentserver.cpp</FILENAME>
+      <LINE>537</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hAcceptServer" может быть равен "0":  это не соответствует спецификации функции "CloseHandle". Самое раннее расположение, где это могло произойти, см. в строке 536</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>495</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>497</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>498</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>501</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>505</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>511</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>512</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>513</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>515</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>516</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>518</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>519</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hAcceptServer" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>521</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>523</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>525</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>527</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>530</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>533</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>534</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>536</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hAcceptServer" является входными данными для "WaitForSingleObject" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\synchapi.h:473)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hAcceptServer" является входными данными для "CloseHandle" (объявлено в c:\program files (x86)\windows kits\8.1\include\um\handleapi.h:50)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\concurrentserver\concurrentserver\</FILEPATH>
+        <FILENAME>concurrentserver.cpp</FILENAME>
+        <LINE>537</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hAcceptServer" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "CloseHandle"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

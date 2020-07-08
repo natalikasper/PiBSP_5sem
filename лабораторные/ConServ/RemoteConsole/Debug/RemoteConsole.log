@@ -1,0 +1,9 @@
+﻿  RemoteConsole.cpp
+F:\5 семестр\ПиБСП\лабораторные\ConServ\RemoteConsole\RemoteConsole.cpp(10,2): warning C4065: оператор switch содержит метку "default", но не содержит ни одной метки "case"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\RemoteConsole\RemoteConsole.cpp(40,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : см. объявление "sprintf"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\RemoteConsole\RemoteConsole.cpp(76,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : см. объявление "scanf"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\RemoteConsole\RemoteConsole.cpp(79,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : см. объявление "sprintf"
+  RemoteConsole.vcxproj -> F:\5 семестр\ПиБСП\лабораторные\ConServ\Debug\RemoteConsole.exe

@@ -1,0 +1,7 @@
+﻿  dllmain.cpp
+d:\learn\программирование сетевых приложений\concurrentserver\win32project2\win32project2\prototypeservice.h(32): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+d:\learn\программирование сетевых приложений\concurrentserver\win32project2\win32project2\prototypeservice.h(39): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  Win32Project2.vcxproj -> D:\learn\Программирование сетевых приложений\ConcurrentServer\Win32Project2\Debug\Win32Project2.dll
+  Win32Project2.vcxproj -> D:\learn\Программирование сетевых приложений\ConcurrentServer\Win32Project2\Debug\Win32Project2.pdb (Full PDB)

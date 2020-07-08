@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  ServerNP.cpp
+e:\бгту\пятый семестр\пибсп\программирование сетевых приложений\concurrentserver\server test\namedpipe\servernp\servernp.cpp(46): warning C4101: wbuf: неиспользованная локальная переменная
+  ServerNP.vcxproj -> E:\БГТУ\Пятый семестр\ПиБСП\Программирование сетевых приложений\ConcurrentServer\server test\NamedPipe\Debug\ServerNP.exe
+  ServerNP.vcxproj -> E:\БГТУ\Пятый семестр\ПиБСП\Программирование сетевых приложений\ConcurrentServer\server test\NamedPipe\Debug\ServerNP.pdb (Partial PDB)

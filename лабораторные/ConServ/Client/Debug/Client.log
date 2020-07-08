@@ -1,0 +1,13 @@
+﻿  Client.cpp
+F:\5 семестр\ПиБСП\лабораторные\ConServ\Client\Client.cpp(91,3): warning C4101: obuf: неиспользованная локальная переменная
+F:\5 семестр\ПиБСП\лабораторные\ConServ\Client\Client.cpp(163,1): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\Winsock2.h(2219): message : см. объявление "gethostbyname"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\Client\Client.cpp(233,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\Client\Client.cpp(237,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\Client\Client.cpp(241,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\Client\Client.cpp(245,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+  Client.vcxproj -> F:\5 семестр\ПиБСП\лабораторные\ConServ\Debug\Client.exe

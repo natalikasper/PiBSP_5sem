@@ -1,0 +1,30 @@
+﻿  ConcurrentServer.cpp
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\Global.h(77,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\Global.h(86,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\DispathServer.h(47,15): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\DispathServer.h(48,19): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\DispathServer.h(53,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\GarbageCleaner.h(19,1): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\Winsock2.h(1849): message : см. объявление "inet_ntoa"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\ConsolePipe.h(41,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : см. объявление "strcpy"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\ConsolePipe.h(42,1): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(90): message : см. объявление "strcat"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\ConsolePipe.h(72,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : см. объявление "sprintf"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\ConsolePipe.h(76,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : см. объявление "sprintf"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\ConsolePipe.h(80,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : см. объявление "sprintf"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\ConsolePipe.h(84,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : см. объявление "sprintf"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\ConsolePipe.h(88,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : см. объявление "sprintf"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\ConsolePipe.h(92,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : см. объявление "sprintf"
+F:\5 семестр\ПиБСП\лабораторные\ConServ\ConcurrentServer\ConsolePipe.h(96,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : см. объявление "sprintf"
+  ConcurrentServer.vcxproj -> F:\5 семестр\ПиБСП\лабораторные\ConServ\Debug\ConcurrentServer.exe
